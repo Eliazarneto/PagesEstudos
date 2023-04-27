@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* { /*Configurações globais*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.cabeçalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%; /*Deu uma boa jogada nos itens para a direita*/
+    background: transparent;
+    display: flex; /*Colocou os itens do cabeçalho em linha reta*/
+    justify-content: space-between; /*Separou os itens do nav propriamente dito, do logo, link etc da esquerda*/
+    align-items: center;
+    /*z-index: 100;*/
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.menunavegação a { /*O a faz referencia aos links, sem ele não é possivel mudar as coisas*/
+    font: 18px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 400;
+    margin-left: 35px; /*cria uma margem entre cada um dos itens a esquerda*/
+    transition: 2s;
+}
+
+.menunavegação a:hover,
+.menunavegação a.ativo {    /*a linha a.ativo faz com que o link selecionado fique com o hover sempre ativo*/
+    color: #00abf0;
+}
+
+.Principal {
+    height: 100vh; /*deu um espaço bom ate o meio da tela mais ou menos*/
+    padding: 0 10%; /*andou 10% para a direita*/
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-principal {
+    max-width: 600px; /*Definiu a largura maxima, aqui ele ficou alinhado a esquerda*/
+}
+
+.conteudo-principal h1 {
+    font-size: 56px;
+    font-weight: 600;
+    color: #00abf0;
+}
+
+.conteudo-principal p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.conteudo-principal .botoes-main {
+    display: flex;
+    justify-content: space-between; /*da uma leve separada*/
+    width: 354px;
+    height: 50px;
+}
+
+.botoes-main a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; /*essa e a linha de cima servem para alinhar*/
+    width: 170px;
+    height: 100%; /*a largura vai ocupar toda a box*/
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.botoes-main a:hover {
+    color: #00abf0;
+}
+
+.botoes-main a:nth-child(2) { /*Fazendo referencia de que é o link 2, filho da div botoes main*/
+    background: transparent;
+    color: #00abf0;
+}
+
+.botoes-main a:nth-child(2):hover {
+    background: #081b29;
+}
+
+.botoes-main a:nth-child(2)::before {
+    background: #00abf0;
+}
+
+.botoes-main a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.botoes-main a:hover::before {
+    width: 100%;
+}
+
+.icones-inferiores {
+    
+    background: red;
+}
