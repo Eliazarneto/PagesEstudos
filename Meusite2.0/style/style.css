@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu { /*menu navegação*/
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu a { /*aqui são os botoes do menu*/
+    color: black;
+    text-decoration: none;
+    padding: 0px 50px 10px 0;
+    font-size: 25pt;
+    position: relative;
+}
+
+.menu a::after {  /*adiciona um elemento depois do nav a, no caso a linha animada*/
+    content: " "; /*so abrir e fechar, conteudo vazio*/
+    width: 0%; /*para que ele fique abaixo do link totalmente*/
+    height: 4x; /*a expressura da linha*/
+    background-color: yellow;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    transition: .5s ease-in-out;
+
+}
+
+.menu a:hover ::after{
+    width: 100%;
+}
