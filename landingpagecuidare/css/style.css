@@ -22,16 +22,13 @@ body {
     
     background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1));
     background-position: 50%;
-    background-attachment: fixed; /*pode deletar talvez*/
-    /*background-size: center;*/ /*nao vi alteração*/
-    /*background-position-y: -180px;*/   /*LINHA PAUSADA - TIRAR ELA FEZ O BACKGROUNDD PEGAR A TELA TODA*/
+    background-attachment: fixed;
     
 }
 /* MENU - HEADER - NAVBAR */
 
 header {
     align-items: center;
-
     height: 100px;
     background: rgba(22, 22, 22, 0.2);
 }
@@ -84,6 +81,10 @@ header {
 /* Centro - Conteúdo principal */
 
 main {
+    background-image: url(../imagens/WhatsApp\ Image\ 2023-04-25\ at\ 20.12.48.jpeg);
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-position: center;
     height: 93vh;
     display: flex;
     justify-content: center;
