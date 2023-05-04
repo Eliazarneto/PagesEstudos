@@ -1,0 +1,39 @@
+body {
+    background-color: aqua;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+   
+}
+
+.cabeçalho {
+    background-color: yellow;
+    align-items: center;
+}
+
+.logo {
+    margin: 10px;
+}   
+
+.menu {
+    margin-left: 20px;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    padding-right: 50px;
+    display: inline-flex;
+    margin-right: 30px; /* usar margin para dar espaço pois não aumenta o botão */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    background-color: rgb(139, 139, 212);
+    transition: 0.8s;
+}
