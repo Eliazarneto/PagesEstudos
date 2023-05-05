@@ -10,6 +10,8 @@
 body {
     background: #081b29;
     color: #ededed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.801)),url(https://assets-blog.hostgator.com.br/wp-content/uploads/2018/07/o-que-e-css-scaled-1.webp);
+    background-size: cover;
 }
 
 .cabeçalho {
@@ -106,10 +108,12 @@ body {
 
 .botoes-main a:nth-child(2):hover {
     background: #081b29;
+    color: #081b29;
 }
 
 .botoes-main a:nth-child(2)::before {
     background: #00abf0;
+    color: #081b29;
 }
 
 .botoes-main a::before {
@@ -122,6 +126,7 @@ body {
     background: #081b29;
     z-index: -1;
     transition: .5s;
+    color: #081b29;
 }
 
 .botoes-main a:hover::before {

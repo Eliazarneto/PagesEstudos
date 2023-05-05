@@ -37,3 +37,24 @@ header {
     background-color: rgb(139, 139, 212);
     transition: 0.8s;
 }
+
+.boxmaior{
+    background-color: orange;
+    display: flex;
+    justify-content: center; /*deixar as box no meio*/
+}
+
+.box1 {
+    background-color: blueviolet;
+    margin-right: 10px;
+}
+
+.box2 {
+    background-color: rgb(37, 143, 143);
+    margin-right: 10px;
+}
+
+.box3 {
+    background-color: azure;
+    margin-right: 10px;
+}
