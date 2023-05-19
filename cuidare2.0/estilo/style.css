@@ -1,41 +1,109 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: gray;
+    background-color: rgb(59, 58, 58);
     color: white;
-    height: 7vh;
-    max-width: 98vh;
+    height: 7%;
+    width: 100%;
+}
+
+.menu :hover {
+    text-decoration: underline;
 }
 
 .cabeçalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin-left: 3vh;
 }
 
 .logo {
-    font-size: 5vh;
+    font-size: 3vh;
     letter-spacing: 3px;
 }
 
 .menu {
     display: flex;
-    
+    margin: auto;
+    align-items: center;
+    text-align: center;    
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     margin-left: 8vh;
     padding-right: 5vh;
+    align-items: center;
+    text-align: center;    
+    letter-spacing: 2px;
+}
+
+.corpo {
+    width: 100%;
+    background-color: yellow;
+    height: 92vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.808)),url(https://wordpress-cms-gc-prod-assets.quero.space/uploads/2019/01/woman-doing-speech-therapy-with-a-little-blonde-boy-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.texto-principal {
+    margin: auto;
+    padding-top: 30vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 7vh;
+    font-size: 4vh;
+    letter-spacing: 0.2vh;
+}
+
+.texto-secundario {
+    padding-top: 2vh;
+    padding-left: 7vh;
+    color: white;
+    font-size: 3vh;
+}
+
+.botoes {
+    padding-top: 2vh;
+    padding-left: 7vh;
+}
+
+.botoes :hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    padding-left: 7vh;
+    background-color: rgba(7, 7, 7, 0.644);
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(59, 58, 58);
+    height: 4.2vh;
+    color: white;
+}
+
+footer a {
+    color: white;
 }
