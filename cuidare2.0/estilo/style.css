@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100%;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    height: 7vh;
+    max-width: 98vh;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 3vh;
+}
+
+.logo {
+    font-size: 5vh;
+    letter-spacing: 3px;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vh;
+    margin-left: 8vh;
+    padding-right: 5vh;
+}
